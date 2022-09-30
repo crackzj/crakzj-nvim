@@ -6,6 +6,7 @@
 
 --vim.api.nvim_set_keymap('n','<leader>ff','<cmd>lua require(telescope.builtin).find_files()<cr>',{noremap = true, silent = true})
 local actions = require("telescope.actions")
+local action_layout = require("telescope.actions.layout")
 require('telescope').setup{
   defaults = {
     -- Default configuration for telescope goes here:

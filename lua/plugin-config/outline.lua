@@ -61,3 +61,5 @@ local opts = {
 }
 
 require("symbols-outline").setup(opts)
+
+vim.api.nvim_set_keymap('n','<leader>o',':SymbolsOutlineOpen<CR>',{noremap = true, silent = true})
