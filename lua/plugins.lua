@@ -36,6 +36,15 @@ return require('packer').startup(function(use)
     	"windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end
     }
     use { 'nvim-treesitter/nvim-treesitter'}
+    -- git
+    use {
+      'lewis6991/gitsigns.nvim',
+      config = function()
+        require('gitsigns').setup()
+      end
+    }
+    -- outlinne
+    use 'simrat39/symbols-outline.nvim'
       -- 添加另外插件
 end)
 

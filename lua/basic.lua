@@ -44,3 +44,5 @@ vim.o.list = true
 vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
+
+vim.keymap.set('i','jj','<esc>')
