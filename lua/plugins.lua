@@ -45,6 +45,37 @@ return require('packer').startup(function(use)
     }
     -- outlinne
     use 'simrat39/symbols-outline.nvim'
-      -- 添加另外插件
+    -- float term
+    use "akinsho/toggleterm.nvim"
+    --use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+     -- require("toggleterm").setup({
+    --size = 20,
+    --open_mapping = [[<c-\>]],
+    --hide_numbers = true,
+    --shade_filetypes = {},
+    --shade_terminals = true,
+    --shading_factor = 2,
+    --start_in_insert = true,
+    --insert_mappings = true,
+    --persist_size = true,
+    --direction = "float",
+    --close_on_exit = true,
+    --shell = vim.o.shell,
+    --float_opts = {
+     --   border = "curved",
+      --  winblend = 0,
+       -- highlights = {
+        --    border = "Normal",
+         --   background = "Normal"
+        --}
+    --}
+--})
+ --   end}
+ use {
+  'nvim-telescope/telescope.nvim',-- tag = '0.1.0',
+    branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+}
+    -- 添加另外插件
 end)
 

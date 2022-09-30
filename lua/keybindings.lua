@@ -45,7 +45,8 @@ vim.api.nvim_set_keymap("n", "<leader>bo", ":BufferLineCloseLeft<CR>:BufferLineC
 
 -- 打开/关闭文件树
 vim.api.nvim_set_keymap("n", "<F2>", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
-
+vim.api.nvim_set_keymap("n","<leader>e",":NvimTreeToggle<CR>",{noremap=true, silent=ture})
+vim.api.nvim_set_keymap("n","<C-b>",":NvimTreeToggle<CR>",{noremap=true,silent=true})
 local pluginKeys = {}
 
 -- nvim-cmp 自动补全

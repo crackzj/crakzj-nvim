@@ -166,10 +166,25 @@ _G.packer_plugins = {
     path = "/Users/crackzj/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/crackzj/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
   ["symbols-outline.nvim"] = {
     loaded = true,
     path = "/Users/crackzj/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
     url = "https://github.com/simrat39/symbols-outline.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/crackzj/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/Users/crackzj/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,

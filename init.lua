@@ -5,6 +5,9 @@ require("plugins")
 require("plugin-config/nvimtree")
 require("plugin-config/bufferline")
 require("plugin-config/lualine")
+require("plugin-config/outline")
+require("plugin-config/toggleterm")
+require("plugin-config/telescope")
 require('lsp/nvim-cmp')
 require("lsp/setup")
 -- Example config in Lua
@@ -20,4 +23,3 @@ vim.cmd[[colorscheme tokyonight]]
 
 vim.opt.termguicolors = true
 
-require("symbols-outline").setup()
