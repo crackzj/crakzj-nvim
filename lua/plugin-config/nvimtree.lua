@@ -11,7 +11,7 @@ require("nvim-tree").setup({
             ".gitignore"
         },
         -- 不显示隐藏文件
-        dotfiles = true
+        dotfiles = false --true
     },
     -- 以图标显示git 状态
     git = {

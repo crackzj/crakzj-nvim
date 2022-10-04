@@ -10,6 +10,7 @@ require("plugin-config/toggleterm")
 require("plugin-config/telescope")
 require('lsp/nvim-cmp')
 require("lsp/setup")
+require("lsp/css")
 -- Example config in Lua
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_italic_functions = true

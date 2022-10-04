@@ -72,10 +72,16 @@ return require('packer').startup(function(use)
 --})
  --   end}
  use {
-  'nvim-telescope/telescope.nvim',-- tag = '0.1.0',
-    branch = '0.1.x',
-    requires = { {'nvim-lua/plenary.nvim'} }
-}
+      'nvim-telescope/telescope.nvim',-- tag = '0.1.0',
+        branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    -- for rust
+    use 'simrat39/rust-tools.nvim'
+
+    -- Debugging
+    use 'nvim-lua/plenary.nvim'
+    use 'mfussenegger/nvim-dap'
     -- 添加另外插件
 end)
 
