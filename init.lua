@@ -11,6 +11,11 @@ require("plugin-config/telescope")
 require('lsp/nvim-cmp')
 require("lsp/setup")
 require("lsp/css")
+if vim.g.vscode then
+    -- VSCode extension
+else
+    -- ordinary Neovim
+end
 -- Example config in Lua
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_italic_functions = true
