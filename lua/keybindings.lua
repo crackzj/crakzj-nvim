@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
+--vscode 快捷键
 
 -- 翻页
 vim.api.nvim_set_keymap("n", "<C-f>", "10jzz", {noremap = true, silent = true})

@@ -71,7 +71,7 @@ return require('packer').startup(function(use)
     --}
 --})
  --   end}
- use {
+    use {
       'nvim-telescope/telescope.nvim',-- tag = '0.1.0',
         branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
@@ -82,6 +82,17 @@ return require('packer').startup(function(use)
     -- Debugging
     use 'nvim-lua/plenary.nvim'
     use 'mfussenegger/nvim-dap'
+
+    -- surround
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
     -- 添加另外插件
 end)
 
