@@ -1,7 +1,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
---vscode 快捷键
-
+--vscode
+vim.api.nvim_set_keymap("i","<esc>","<cmd>lua require('myinput').change()<CR> jj",{silent = true})
+ 
 -- 翻页
 vim.api.nvim_set_keymap("n", "<C-f>", "10jzz", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<C-b>", "10kzz", {noremap = true, silent = true})
