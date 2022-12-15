@@ -56,9 +56,15 @@ db.custom_center = {
     {icon = "  ", desc = "Open Personal dotfiles      ", shortcut = "leader e e", action = "edit $MYVIMRC"}
 }
 
+--if executable('im-select')
+--    autocmd InsertLeave * :call system("im-select com.apple.keylayout.ABC")
+--    autocmd CmdlineLeave * :call system("im-select com.apple.keylayout.ABC") 
+--endif
+
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {
     pattern = { "*" },
     callback = function()
         vim.fn.system("inputsource com.apple.keylayout.ABC")
     end,
 })
+
