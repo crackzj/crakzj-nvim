@@ -7,9 +7,9 @@ return require('packer').startup(function(use)
     use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
     -- 目录
     use {
-      'kyazdani42/nvim-tree.lua',
+      'nvim-tree/nvim-tree.lua',
       requires = {
-        'kyazdani42/nvim-web-devicons', -- optional, for file icons
+        'nvim-tree/nvim-web-devicons', -- optional, for file icons
       },
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }

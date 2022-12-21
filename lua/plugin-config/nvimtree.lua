@@ -1,20 +1,30 @@
+
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+
+-- empty setup using defaults
+require("nvim-tree").setup()
+
+-- OR setup with some options
 require("nvim-tree").setup({
-    -- 关闭文件时，自动关闭
-    auto_close = true,
-    filters = {
-        -- 不显示 .git 目录中的内容
-        custom = {
-            ".git/"
-        },
-        -- 显示 .gitignore
-        exclude = {
-            ".gitignore"
-        },
-        -- 不显示隐藏文件
-        dotfiles = false --true
+  sort_by = "case_sensitive",
+  view = {
+    adaptive_size = true,
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+      },
     },
-    -- 以图标显示git 状态
-    git = {
-        enable = true
-    }
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
 })
+
