@@ -4,7 +4,7 @@ return require('packer').startup(function(use)
     -- 主题
     use 'folke/tokyonight.nvim'
     -- tab
-    use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'kyazdani42/nvim-web-devicons'}
     -- 目录
     use {
       'nvim-tree/nvim-tree.lua',

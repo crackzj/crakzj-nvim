@@ -3,8 +3,8 @@ vim.g.maplocalleader = " "
 --vscode
  
 -- 翻页
-vim.api.nvim_set_keymap("n", "<C-f>", "10jzz", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<C-b>", "10kzz", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<C-j>", "10jzz", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<C-k>", "10kzz", {noremap = true, silent = true})
 
 -- 多窗口
 -- 窗口打开/关闭
@@ -29,7 +29,7 @@ vim.api.nvim_set_keymap("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>", {norema
 vim.api.nvim_set_keymap("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<leader>bg", ":BufferLinePick", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>bg", ":BufferLinePick<CR>", {noremap = true, silent = true})
 
 vim.api.nvim_set_keymap("n", "gt", ":BufferLineCycleNext<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "gT", ":BufferLineCyclePrev<CR>", {noremap = true, silent = true})
