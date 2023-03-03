@@ -21,11 +21,11 @@
 - kyazdni42/nvim-web-devicons
 
 > A lua fork of vim-devicons. This plugin provides the same icons as well as colors for each icon.
-
+>
 > 为`nvim-tree`提供字体图标，实现类似`vscode`的样式
-
+>
 > `packer`安装: `use 'nvim-tree/nvim-web-devicons'`
-
+>
 > `Setup`
 
 ```
