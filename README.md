@@ -1,7 +1,6 @@
 ## Carckzj nvim
 
 > 个人`neovim`配置文件,参考了知乎和自己在`github`查看的一些插件教程
-> 个人设置的`leader`键为空格(`Space`)
 ## features
 > 自动切换输入法(从insert模式换为其他模式时，自动切换为英文输入法，目前只适配了macos)
 
@@ -9,36 +8,70 @@
 
 - 翻页: `Ctrl + k`上翻10行，`Ctrl + j`下翻10行
 
-- 窗口操作: `sv` 垂直分割窗口，`sh` 水平分割窗口，`sc`关闭当前窗口 ，`so`关闭其他窗口&保留当前窗口
+- 窗口操作: 
 
-- 窗口跳转: `leader(Space) + h`跳转到左边窗口，`Space + l`跳转到右边窗口，`Space + j`跳转到下边窗口，`Space + k`跳转到上边窗口
+- `Ctrl + b`: 打开/关闭文件查看`nvim-tree`
 
-- `Buffer`操作(`bufferline`)插件:
-
-> - `Space + number(1~9)`快速跳转到1～9个`Buffer`
->
-> - `Space + bg`标记`buffer`快速跳转
->
-> - `Space + bp`标记关闭某个`buffer`
->
-> - `Space + bc`删除当前`buffer`
->
-> - `Space + bo`关闭其他`buffer`,保留当前 
->
-> - `gt`切换到下一个`buffer`，`gT`切换到上一个
->
-
-- `Ctrl + b` `Space + e` `F2`: 打开/关闭文件查看`nvim-tree`
-
-- `nvim-cmp`自动补全:
-
-> - 
+- `Space + 数字`: 跳转对应`buffer`
 
 ## 已安装插件列表
 
 - rafamadriz/friendly-snippets
 
 - kyazdni42/nvim-web-devicons
+
+> A lua fork of vim-devicons. This plugin provides the same icons as well as colors for each icon.
+
+> 为`nvim-tree`提供字体图标，实现类似`vscode`的样式
+
+> `packer`安装: `use 'nvim-tree/nvim-web-devicons'`
+
+> `Setup`
+
+```
+require'nvim-web-devicons'.setup {
+ -- your personnal icons can go here (to override)
+ -- you can specify color or cterm_color instead of specifying both of them
+ -- DevIcon will be appended to `name`
+ override = {
+  zsh = {
+    icon = "",
+    color = "#428850",
+    cterm_color = "65",
+    name = "Zsh"
+  }
+ };
+ -- globally enable different highlight colors per icon (default to true)
+ -- if set to false all icons will have the default icon's color
+ color_icons = true;
+ -- globally enable default icons (default to false)
+ -- will get overriden by `get_icons` option
+ default = true;
+ -- globally enable "strict" selection of icons - icon will be looked up in
+ -- different tables, first by filename, and if not found by extension; this
+ -- prevents cases when file doesn't have any extension but still gets some icon
+ -- because its name happened to match some extension (default to false)
+ strict = true;
+ -- same as `override` but specifically for overrides by filename
+ -- takes effect when `strict` is true
+ override_by_filename = {
+  [".gitignore"] = {
+    icon = "",
+    color = "#f1502f",
+    name = "Gitignore"
+  }
+ };
+ -- same as `override` but specifically for overrides by extension
+ -- takes effect when `strict` is true
+ override_by_extension = {
+  ["log"] = {
+    icon = "",
+    color = "#81e043",
+    name = "Log"
+  }
+ };
+}
+```
 
 - neovim/nvim-lspconfig
 
