@@ -11,6 +11,11 @@ require("plugin-config/telescope")
 require('lsp/nvim-cmp')
 require("lsp/setup")
 require("lsp/css")
+--vim.opt.runtimepath:append("$HOME/Documents/Code/Lua/example")
+--local pkg = require('example')
+--vim.pretty_print("hello world")
+--vim.notify(pkg.info)
+
 if vim.g.vscode then
     -- VSCode extension
 else
