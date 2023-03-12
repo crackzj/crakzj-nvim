@@ -7,8 +7,6 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
---vscode
- 
 -- 翻页
 vim.api.nvim_set_keymap("n", "<C-j>", "10jzz", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<C-k>", "10kzz", {noremap = true, silent = true})

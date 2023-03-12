@@ -109,5 +109,3 @@ vim.opt.termguicolors = true
 
 --补全增强
 vim.o.wildmenu = true
-
-vim.keymap.set('i','jj','<esc>')
