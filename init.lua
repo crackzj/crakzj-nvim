@@ -3,11 +3,12 @@
 --vim.pretty_print("hello world")
 --vim.notify(pkg.info)
 
+
 if vim.g.vscode then
     -- VSCode extension
 else
-require("basic")
 require("keybindings")
+require("basic")
 require("autocmd")
 require("plugins")
 require("plugin-config/nvimtree")
@@ -95,6 +96,7 @@ local db = require('dashboard')
 --    autocmd InsertLeave * :call system("im-select com.apple.keylayout.ABC")
 --    autocmd CmdlineLeave * :call system("im-select com.apple.keylayout.ABC") 
 --endif
+end
 
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {
     pattern = { "*" },
@@ -103,4 +105,4 @@ vim.api.nvim_create_autocmd({ "InsertLeave" }, {
     end,
 })
 
-end
+
