@@ -94,7 +94,6 @@ return require('packer').startup(function(use)
         end
     })
 
-    use 'glepnir/dashboard-nvim'
     -- 添加另外插件
 end)
 
