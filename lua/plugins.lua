@@ -4,7 +4,7 @@ return require('packer').startup(function(use)
     -- 主题
     use 'folke/tokyonight.nvim'
     -- tab
-    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'kyazdani42/nvim-web-devicons'}
+    use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
     -- 目录
     use {
       'nvim-tree/nvim-tree.lua',
@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
     -- statusline
-    use { 'nvim-lualine/lualine.nvim',   requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+    use { 'nvim-lualine/lualine.nvim',   requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
     -- lsp server
     --use {'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer'}
     use {'neovim/nvim-lspconfig'}
@@ -46,7 +46,10 @@ return require('packer').startup(function(use)
     -- outlinne
     use 'simrat39/symbols-outline.nvim'
     -- float term
-    use "akinsho/toggleterm.nvim"
+    --use "akinsho/toggleterm.nvim"
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+    end}
     --use {"akinsho/toggleterm.nvim", tag = '*', config = function()
      -- require("toggleterm").setup({
     --size = 20,

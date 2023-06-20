@@ -86,7 +86,7 @@ vim.o.mouse = "a"
 vim.o.updatetime = 300
 
 -- 等待mappings
-vim.o.timeoutlen = 100
+vim.o.timeoutlen = 400
 
 --split window 从下边和右边出现
 vim.o.splitbelow = true
@@ -109,3 +109,6 @@ vim.opt.termguicolors = true
 
 --补全增强
 vim.o.wildmenu = true
+
+-- 使用系统剪贴板
+vim.opt.clipboard = "unnamedplus"
