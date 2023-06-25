@@ -18,6 +18,11 @@ require'lspconfig'.asm_lsp.setup{}
 
 -- vue
 require'lspconfig'.volar.setup{
+  init_options = {
+    typescript = {
+      tsdk = '.pnpm-store/global/typescript/lib'
+    }
+  },
   filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
 }
 
