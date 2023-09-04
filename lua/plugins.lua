@@ -1,6 +1,8 @@
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+    -- git
+    use 'lewis6991/gitsigns.nvim'
     -- 主题
     use 'folke/tokyonight.nvim'
     -- tab
@@ -11,6 +13,12 @@ return require('packer').startup(function(use)
       requires = {
         'nvim-tree/nvim-web-devicons', -- optional, for file icons
       }
+    }
+    -- dashboard
+    use {
+      'glepnir/dashboard-nvim',
+      event = 'VimEnter',
+      requires = {'nvim-tree/nvim-web-devicons'}
     }
     -- statusline
     use { 'nvim-lualine/lualine.nvim',   requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
