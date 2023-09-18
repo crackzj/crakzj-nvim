@@ -1,8 +1,6 @@
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    -- git
-    use 'lewis6991/gitsigns.nvim'
     -- 主题
     use 'folke/tokyonight.nvim'
     -- tab
