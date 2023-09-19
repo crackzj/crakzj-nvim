@@ -1,5 +1,5 @@
 vim.opt.termguicolors = true
-local bufferline = require("bufferline") 
+local bufferline = require("bufferline")
 bufferline.setup{
     options = {
         mode = "buffers",
@@ -42,7 +42,6 @@ bufferline.setup{
           local icon = level:match("error") and " " or " "
             return " " .. icon .. count
         end,
-        
         offsets = {
             {
                 filetype = "NvimTree",

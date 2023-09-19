@@ -40,7 +40,13 @@ return require('packer').startup(function(use)
     use {
     	"windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end
     }
-    use { 'nvim-treesitter/nvim-treesitter'}
+    use { 
+      'nvim-treesitter/nvim-treesitter',
+      run = function ()
+        local ts_update = require('nvim-treesitter.install').update({with_sync = true})
+        ts_update()
+      end,
+    }
     -- git
     use {
       'lewis6991/gitsigns.nvim',
