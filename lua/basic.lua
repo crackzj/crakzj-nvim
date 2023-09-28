@@ -78,9 +78,9 @@ vim.o.hidden = true
 vim.o.mouse = "a"
 
 -- 禁止创建备份文件
---vim.o.backpup = false
---vim.o.writebackup = false
---vim.o.swapfile = false
+vim.o.backpup = false
+vim.o.writebackup = false
+vim.o.swapfile = false
 
 -- smaller updatetime
 vim.o.updatetime = 300
@@ -100,7 +100,7 @@ vim.o.history = 1000
 -- 显示不可见字符
 vim.o.list = true
 --把空格显示为点
---vim.o.listchars ="space:·"
+vim.o.listchars ="space:·"
 
 --样式
 vim.o.background = "dark"
