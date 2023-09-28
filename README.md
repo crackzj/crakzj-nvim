@@ -130,3 +130,20 @@ use {
 
 - kylechui/nvim-surround
 
+
+## `nvim-treesitter` 配置
+
+> `nvim-treesitter`目前提供以下功能
+
+- 代码高亮
+- 增量选择
+- `=`代码格式化
+- 折叠
+
+> 代码高亮配置已启动，可使用`TSBufToggle highlight`启用代码文件高亮或关闭
+
+> 代码选择：在`normal`模式下，使用`enter`可以增量选择代码,`Backspace`可以减少选择
+
+> 代码格式化：`=`可以格式化选择的代码块，`tips: gg=G`可以格式化整个文件
+
+> 折叠代码块：`zc`，`zo`可以折叠/展开`{}`里面的内容
