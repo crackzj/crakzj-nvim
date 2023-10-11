@@ -43,8 +43,7 @@ end
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {
     pattern = { "*" },
     callback = function()
-        vim.fn.system("inputsource com.apple.keylayout.ABC")
+        vim.fn.system("im-select com.apple.keylayout.ABC")
     end,
 })
-
 
