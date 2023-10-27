@@ -8,13 +8,6 @@ if vim.g.vscode then
     -- VSCode extension
 
   vim.o.backpup = false --不创建备份文件
-
-  vim.api.nvim_create_autocmd({ "InsertLeave" }, {
-    pattern = { "*" },
-    callback = function()
-        vim.fn.system("im-select com.apple.keylayout.ABC")
-    end,
-})
 else
 require("keybindings")
 require("basic")
@@ -50,11 +43,3 @@ vim.cmd[[colorscheme tokyonight]]
 vim.opt.termguicolors = true
 
 end
-
-vim.api.nvim_create_autocmd({ "InsertLeave" }, {
-    pattern = { "*" },
-    callback = function()
-        vim.fn.system("im-select com.apple.keylayout.ABC")
-    end,
-})
-

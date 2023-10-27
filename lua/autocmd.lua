@@ -12,3 +12,10 @@ vim.cmd([[
     autocmd BufWritePost plugins.lua source <afile> | PackerCompile
   augroup end
 ]])
+
+vim.api.nvim_create_autocmd({"InsertLeave"},{
+  pattern={"*"},
+  callback = function()
+        vim.fn.system("im-select com.apple.keylayout.ABC")
+  end
+})
