@@ -3,6 +3,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     -- 主题
     use 'folke/tokyonight.nvim'
+    use { "catppuccin/nvim", as = "catppuccin" }
     -- tab
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
     -- 目录

@@ -100,7 +100,7 @@ vim.o.history = 1000
 -- 显示不可见字符
 vim.o.list = true
 --把空格显示为点
-vim.o.listchars ="space:·"
+--vim.o.listchars ="space:·"
 
 --样式
 vim.o.background = "dark"

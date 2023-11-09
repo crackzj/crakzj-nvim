@@ -3,15 +3,14 @@
 --vim.pretty_print("hello world")
 --vim.notify(pkg.info)
 
+require("autocmd")
 
 if vim.g.vscode then
     -- VSCode extension
-
   vim.o.backpup = false --不创建备份文件
 else
 require("keybindings")
 require("basic")
-require("autocmd")
 require("plugins")
 require("plugin-config/gitsins")
 require("plugin-config/nvimtree")
@@ -28,8 +27,6 @@ require("lsp/setup")
 require("lsp/css")
 
 
-    -- ordinary Neovim
--- Example config in Lua
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_italic_functions = true
 vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
