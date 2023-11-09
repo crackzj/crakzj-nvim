@@ -12,12 +12,37 @@
 
 - 翻页: `Ctrl + k`上翻10行，`Ctrl + j`下翻10行
 
-- 窗口操作: 
+#### 窗口操作: 
 
 - `Ctrl + b`: 打开/关闭文件查看`nvim-tree`
 
+- `leader + sv`: 垂直分割窗口
+
+- `leader + sh`: 水平分割窗口
+
+- `leader + sc`: 关闭窗口
+
+- `leader + so`: 关闭其他窗口，保留当前窗口
+
+- `leader + h/j/k/l`: 窗口间快速跳转
+
+- `<C-w> + h/j/k/l`: 窗口间快速跳转
+
+#### `buffer`操作
+
 - `Space + 数字`: 跳转对应`buffer`
 
+- `leader + bg`: 选择`buffer`
+
+- `leader + bp`: 关闭某个`buffer`
+
+- `leader + bc`: 关闭当前`buffer`
+
+- `leader + bo`: 关闭其他`buffer`
+
+- `leader + gt`: 跳转下一个`buffer`
+
+- `leader + gT`: 跳转上一个`buffer`
 ## 已安装插件列表
 
 - rafamadriz/friendly-snippets
