@@ -4,6 +4,13 @@ return require('packer').startup(function(use)
     -- 主题
     use 'folke/tokyonight.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
+    use({
+      'projekt0n/github-nvim-theme',
+      config = function()
+        require('github-theme').setup({
+        })
+      end
+    })
     -- tab
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
     -- 目录

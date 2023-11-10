@@ -9,6 +9,7 @@ if vim.g.vscode then
     -- VSCode extension
   vim.o.backpup = false --不创建备份文件
 else
+require("plugin-config/theme")
 require("keybindings")
 require("basic")
 require("plugins")
@@ -27,6 +28,7 @@ require("lsp/setup")
 require("lsp/css")
 
 
+
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_italic_functions = true
 vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
@@ -35,7 +37,8 @@ vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
 vim.g.tokyonight_colors = { hint = "orange", error = "#ff0000" }
 
 -- Load the colorscheme
-vim.cmd[[colorscheme tokyonight]]
+--vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme catppuccin-frappe]]
 
 vim.opt.termguicolors = true
 
