@@ -12,6 +12,8 @@ require("mason").setup({
 require'lspconfig'.gopls.setup{}
 require'lspconfig'.golangci_lint_ls.setup{}
 
+-- protobuf grpc
+require'lspconfig'.bufls.setup{}
 
 -- asm-lsp
 require'lspconfig'.asm_lsp.setup{}
