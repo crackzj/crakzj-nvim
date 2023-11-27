@@ -1,6 +1,13 @@
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+   -- im-select
+    use {
+    "keaising/im-select.nvim",
+    config = function()
+        require("im_select").setup({})
+    end
+} 
     -- 主题
     use 'folke/tokyonight.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
