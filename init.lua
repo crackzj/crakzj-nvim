@@ -3,7 +3,6 @@
 --vim.pretty_print("hello world")
 --vim.notify(pkg.info)
 require("autocmd")
-
 require("plugins")
 if vim.g.vscode then
     -- VSCode extension
