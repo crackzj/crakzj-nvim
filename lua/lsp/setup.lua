@@ -87,3 +87,13 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 require'lspconfig'.html.setup {
   capabilities = capabilities,
 }
+
+
+-- Show hover
+vim.api.nvim_set_keymap("n","gh",":lua vim.lsp.buf.hover()<CR>",{noremap = true, silent = true})
+ -- Jump to definition
+vim.api.nvim_set_keymap("n","gd",":lua vim.lsp.buf.definition()<CR>",{noremap = true, silent = true})
+ -- Open code actions using the default lsp UI, if you want to change this please see the plugins above
+vim.api.nvim_set_keymap("n","<leader>ca",":lua vim.lsp.buf.code_action()<CR>",{noremap = true, silent = true})
+ -- Open code actions for the selected visual range
+vim.api.nvim_set_keymap("x","<leader>ca",":lua vim.lsp.buf.range_code_action()<CR>",{noremap = true, silent = true})
