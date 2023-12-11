@@ -1,3 +1,5 @@
+-- 配置golang
+require("lsp.golang")
 require("mason").setup({
     ui = {
         icons = {
@@ -7,10 +9,6 @@ require("mason").setup({
         }
     }
 })
-
--- 配置golang
-require'lspconfig'.gopls.setup{}
-require'lspconfig'.golangci_lint_ls.setup{}
 
 -- protobuf grpc
 require'lspconfig'.bufls.setup{}
