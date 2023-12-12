@@ -1,15 +1,18 @@
 -- 配置golang
-require'lspconfig'.gopls.setup{
+local lspconfig = require("lspconfig")
+
+lspconfig.golangci_lint_ls.setup{}
+
+lspconfig.gopls.setup({
   settings = {
     gopls = {
-      ui = {
-        completion = {
-          usePlaceholders = true
-        }
-      }
-    }
-  }
-}
-require'lspconfig'.golangci_lint_ls.setup{}
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+      gofumpt = true,
+    },
+  },
+})
 
 

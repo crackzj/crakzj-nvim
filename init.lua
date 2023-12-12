@@ -4,13 +4,20 @@
 --vim.notify(pkg.info)
 require("autocmd")
 require("plugins")
+
+if vim.g.neovide then
+ -- vscode.on('vscode-neovim.escape', notify)
+
+vim.g.neovide_remember_window_size = true
+vim.g.neovide_fullscreen = true
+end
+
 if vim.g.vscode then
     -- VSCode extension
  -- local vscode = require('vscode-neovim')
  -- vscode.notify("hello, test")
   vim.notify("hello vscode");
 
- -- vscode.on('vscode-neovim.escape', notify)
 else
 require("plugin-config/theme")
 require("keybindings")
