@@ -97,3 +97,5 @@ vim.api.nvim_set_keymap("n","gd",":lua vim.lsp.buf.definition()<CR>",{noremap = 
 vim.api.nvim_set_keymap("n","<leader>ca",":lua vim.lsp.buf.code_action()<CR>",{noremap = true, silent = true})
  -- Open code actions for the selected visual range
 vim.api.nvim_set_keymap("x","<leader>ca",":lua vim.lsp.buf.range_code_action()<CR>",{noremap = true, silent = true})
+
+vim.api.nvim_set_keymap("n","<leader>f",":lua vim.lsp.buf.formatting()<CR>",{noremap = true, silent = true})

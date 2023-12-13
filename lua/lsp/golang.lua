@@ -1,7 +1,7 @@
 -- 配置golang
 local lspconfig = require("lspconfig")
 
-lspconfig.golangci_lint_ls.setup{}
+--lspconfig.golangci_lint_ls.setup{}
 
 lspconfig.gopls.setup({
   settings = {
